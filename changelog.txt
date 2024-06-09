@@ -1,0 +1,14 @@
+V 1.0.2
+[WINDOWS]
+- Fix alpha in stretch mode
+
+V 1.0.1
+[ All runtimes]
+- Fix display on create in runtime
+- Fix hotspot on create in runtime
+[ Windows]
+- Fix Stretch mode with alpha
+- Fix automatic icon generation in editime (on Window 7)
+[ Android]
+- Object disapear when user close and reopen application window
+- Display bug on tile display mode en integral dimensions disabled 

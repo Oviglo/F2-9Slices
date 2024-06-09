@@ -1,0 +1,190 @@
+{
+  "About": {
+    "Name": "9 Slices Object",
+    "Author": "Loic OVIGNE",
+    "Copyright": "Copyright (C) 2020 Oviglo",
+    "Comment": "Make object with 9 images",
+    "URL": "https://www.oviglo.fr",
+    "Help": "Help/9SlicesObject/index.html",
+    "Identifier": "O9S"
+  },
+  "ActionMenu": [
+    "Separator",
+    [
+      "Sizes",
+      [
+        0,
+        "Set width"
+      ],
+      [
+        1,
+        "Set height"
+      ]
+
+    ],
+
+    [
+      "Scale",
+
+      [
+        2,
+        "Set X scale"
+      ],
+      [
+        3,
+        "Set Y scale"
+      ]
+    ],
+
+    [
+      "Hot spot",
+      [
+        4,
+        "Set X hot spot"
+      ],
+
+      [
+        5,
+        "Set Y hot spot"
+      ],
+
+      [
+        6,
+        "Enable always center hot spot"
+      ],
+
+      [
+        7,
+        "Disable always center hot spot"
+      ]
+    ],
+
+    [
+      8,
+      "Enable integral dimensions"
+    ],
+    [
+      9,
+      "Disable integral dimensions"
+    ],
+    [
+      10,
+      "Set display mode"
+    ],
+    "Separator"
+  ],
+  "ConditionMenu": [
+    [ 0, "Hot spot is always center" ],
+    [ 1, "Is integral dimensions" ]
+  ],
+    "ExpressionMenu": [
+      [ 0, "X scale" ],
+      [ 1, "Y scale" ],
+      [ 2, "X hot spot" ],
+      [ 3, "Y hot spot" ],
+      [ 4, "Display mode"]
+    ],
+  "Actions": [
+    {
+      "Title": "Set width to %0",
+      "Parameters": [
+        [
+          "Integer",
+          "Width"
+        ]
+      ]
+    },
+    {
+      "Title": "Set height to %0",
+      "Parameters": [
+        [
+          "Integer",
+          "Height"
+        ]
+      ]
+    },
+    {
+      "Title": "Set X scale to %0",
+      "Parameters": [
+        [
+          "Float",
+          "X scale"
+        ]
+      ]
+    },
+    {
+      "Title": "Set Y scale to %0",
+      "Parameters": [
+        [
+          "Float",
+          "Y scale"
+        ]
+      ]
+    },
+    {
+      "Title": "Set X hot spot to %0",
+      "Parameters": [
+        [
+          "Integer",
+          "X hot spot"
+        ]
+      ]
+    },
+    {
+      "Title": "Set Y hot spot to %0",
+      "Parameters": [
+        [
+          "Integer",
+          "Y hot spot"
+        ]
+      ]
+    },
+    {
+      "Title": "Enable always center hot spot"
+    },
+    {
+      "Title": "Disable always center hot spot"
+    },
+    {
+      "Title": "Enable integral dimensions"
+    },
+    {
+      "Title": "Disable integral dimensions"
+    },
+    {
+      "Title": "Set display mode to %0",
+      "Parameters": [
+        [
+          "Integer",
+          "Display mode: 0 = Tile, 1 = Stretch"
+        ]
+      ]
+    }
+  ],
+    "Conditions": [
+      {
+        "Title": "Hot spot is always center"
+      },
+      {
+        "Title": "Integral dimensions option is enabled"
+      }
+    ],
+    "Expressions": [
+      {
+        "Title": "XScale(",
+        "Returns": "Float"
+      },
+      {
+        "Title": "YScale(",
+        "Returns": "Float"
+      },
+      {
+        "Title": "XHotSpot(",
+        "Returns": "Integer"
+      },
+      {
+        "Title": "YHotSpot(",
+        "Returns": "Integer"
+      }
+    ]
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/fav.png" type="image/x-icon">
+        <title>9 Slices Object - Clickteam Fusion 2.5 Extension</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                9 Slices Object
+                <ul>
+                    <li><a href="#what-is-it">What's it ?</a></li>
+                    <li><a href="#how-to-use">How to use ?</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#conditions">Conditions</a></li>
+                    <li><a href="#actions">Actions</a></li>
+                    <li><a href="#expressions">Expression</a></li>
+                    <li><a href="#thanks">Thanks</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="header">
+                    <img alt="9 slices object icon" src="img/icon_96.png"/>
+                    <h1>9 Slices Object</h1>
+                    <small>Writed by Loïc OVIGNE - <a href="https://www.oviglo.fr" target="_blank" >www.oviglo.fr</a></small>
+                    <div class="exporters">
+                        <img src="img/windows-brands.svg" alt="windows"/> <img src="img/html5-brands.svg" alt="html5"/> <img src="img/android-brands.svg" alt="android"/>
+                    </div>
+                    
+                </div>
+                <section id="what-is-it">
+                    <h2>What's it ?</h2>
+                    <p>9 Slices Object allow to draw boxes with 9 images, the advantage is that the box is not deformed with the resize.</p> Examples of use
+                    <ul>
+                        <li>Tiled backdrops</li>
+                        <li>Buttons</li>
+                        <li>Dialog boxes</li>
+                    </ul>
+                </section>
+
+                <section id="how-to-use">
+                    <h2>How to use ?</h2>
+                    At the first time, you need to load images (you can load tileset an automatly cut it by the Fusion's import tool)<br/>
+                    <div class="center">
+                        <img alt="Load images" src="img/load_images.png"/>
+                    </div>
+                    You can know set your object in the scene.
+                    <div class="center">
+                        <img alt="Editime" src="img/edittime.png"/>
+                    </div>
+                </section>
+
+                <section id="settings">
+                    <h2>Settings</h2>
+                    <div class="center">
+                        <img alt="Settings" src="img/settings.png"/>
+                    </div>
+                    <dl>
+                        <dt>Images</dt>
+                        <dd>Set your object images</dd>
+                        <dt>Display mode</dt>
+                        <dd>You can set 2 display modes: Tile or Stretch
+                            <div class="center">
+                                <img alt="Display mode" src="img/display_mode.png"/>
+                            </div>
+                        </dd>
+                        <dt>Integral dimensions</dt>
+                        <dd>Force the object size by the tile sizes, only for tile display mode</dd>
+                        <dt>Hot spot</dt>
+                        <dd>The the hot spot of the object, the position is based on this point</dd>
+                        <dt>Always center hotspot</dt>
+                        <dd>Change automatically the hot spot position in the center (after resize object)</dd>
+                    </dl>
+                </section>
+
+                <section id="conditions">
+                    <h2>Conditions</h2>
+                    <dl>
+                        <dt>Hot spot is always center</dt>
+                        <dd>If the "Always center hotspot" option is enabled</dd>
+                    </dl>
+                    <dl>
+                        <dt>Is integral dimensions</dt>
+                        <dd>If the "Integral dimensions" option is enabled</dd>
+                    </dl>
+                </section>
+
+                <section id="actions">
+                    <h2>Actions</h2>
+                    <dl>
+                        <dt>Set width</dt>
+                        <dd>Set the width of the object (automatically resize if integral dimension is enabled)</dd>
+
+                        <dt>Set height</dt>
+                        <dd>Set the height of the object (automatically resize if integral dimension is enabled)</dd>
+
+                        <dt>Set x scale</dt>
+                        <dd>Set the scale on x, it's different to change the width, scale value is stocked and not affected by integral dimensions option</dd>
+
+                        <dt>Set y scale</dt>
+                        <dd>Set the scale on y, it's different to change the width, scale value is stocked and not affected by integral dimensions option</dd>
+
+                        <dt>Set x hot spot</dt>
+                        <dd>Set the x position of the hot spot, no change if always center hot spot option is enabled</dd>
+
+                        <dt>Set y hot spot</dt>
+                        <dd>Set the y position of the hot spot, no change if always center hot spot option is enabled</dd>
+
+                        <dt>Enable always center hot spot</dt>
+                        <dd>Enable the always center hot spot option</dd>
+
+                        <dt>Disable always center hot spot</dt>
+                        <dd>Disable the always center hot spot option</dd>
+
+                        <dt>Enable integral dimensions</dt>
+                        <dd>Enable the integral dimensions option</dd>
+
+                        <dt>Disable integral dimensions</dt>
+                        <dd>Disable the integral dimensions option</dd>
+
+                        <dt>Set display mode</dt>
+                        <dd>Change the display mode: 0 = tile, 1 = stretch</dd>
+                    </dl>
+                </section>
+
+                <section id="expressions">
+                    <h2>Expressions</h2>
+                    <dl>
+                        <dt>X scale</dt>
+                        <dd>The x scale value</dd>
+                        <dt>Y scale</dt>
+                        <dd>The y scale value</dd>
+                        <dt>X hot spot</dt>
+                        <dd>The position on X of the hot spot</dd>
+                        <dt>Y hot spot</dt>
+                        <dd>The position on Y of the hot spot</dd>
+                        <dt>Display mode</dt>
+                        <dd>The display mode value: 0 = tile, 1 = stretch</dd>
+                    </dl>
+                </section>
+
+                <section id="thanks">
+                    <h2>Thanks</h2>
+                    <p>Thanks to Yves from Clickteam for his help.</p>
+                </section>
+                <footer>
+                    9 Slices Object - An extension for <a href="https://www.clickteam.com" target="_blank">Clickteam Fusion 2.5</a> - By Loïc OVIGNE (<a href="https://www.oviglo.fr" target="_blank">oviglo.fr</a>)
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
